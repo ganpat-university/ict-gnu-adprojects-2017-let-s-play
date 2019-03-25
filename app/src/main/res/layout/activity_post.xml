@@ -4,9 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PostActivity">
+    tools:context=".PostActivity"
+    tools:ignore="MissingDefaultResource">
 
-
+    <TextView
+        android:id="@+id/add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Post"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"/>
 
 
     <EditText
@@ -15,6 +22,8 @@
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/add_post"
+        android:layout_marginTop="100dp"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:paddingRight="20dp"/>
@@ -23,12 +32,48 @@
         android:id="@+id/editText_Place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Place where game is going to happen"
+        android:hint="Game Location"
         android:layout_below="@id/editText_Game_name"
         android:inputType="textMultiLine"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:paddingRight="20dp"/>
+
+
+    <EditText
+        android:id="@+id/editText_Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Game Time"
+        android:layout_below="@id/editText_Place"
+        android:inputType="time"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"/>
+
+    <!--<EditText
+        android:id="@+id/editText_Team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_Time"
+        android:hint="Maximum no. of participants for the game"
+        android:inputType="textMultiLine|number"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp" />
+-->
+    <EditText
+        android:id="@+id/editText_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_Time"
+        android:hint="Date"
+        android:inputType="textMultiLine|date"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp" />
+
+
     <Button
         android:id="@+id/bt_Post"
         android:layout_width="wrap_content"
@@ -38,5 +83,6 @@
         android:textColor="@color/colorPrimary"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>

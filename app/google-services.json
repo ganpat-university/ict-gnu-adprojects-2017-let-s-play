@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:882881842139:android:14a32054b165b641",
+        "android_client_info": {
+          "package_name": "com.example.lets_play"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882881842139-cs5bhe1fk4iaut5e56rrjt9mpgn960j7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lets_play",
+            "certificate_hash": "56e9a13d19e14f0081756ced65330dafbfb6f7bd"
+          }
+        },
+        {
+          "client_id": "882881842139-p3u9gcbq8jm5taksj7mg3d8rrjksrs24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMsA14I27qq5d0YGCK4C46oHnYDGKq1vU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882881842139-p3u9gcbq8jm5taksj7mg3d8rrjksrs24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:882881842139:android:2d01165089ac79ff",
         "android_client_info": {
           "package_name": "com.example.letsplay"
